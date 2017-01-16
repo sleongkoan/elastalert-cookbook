@@ -4,8 +4,6 @@ rvm:
 sudo: required
 services:
     - docker
-before_script:
-    - sleep 10
 install:
     - bundle install
 script:
