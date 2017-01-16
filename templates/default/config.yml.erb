@@ -1,23 +1,23 @@
 # This is the folder that contains the rule yaml files
 # Any .yaml file will be loaded as a rule
-rules_folder: <%= node['elastalert']['rules_directory'] %>
+rules_folder: <%= node['pip-elastalert']['rules_directory'] %>
 
 # How often ElastAlert will query Elasticsearch
 # The unit can be anything from weeks to seconds
 run_every:
-  <%= node['elastalert']['elasticsearch']['run_every']['unit'] %>: <%= node['elastalert']['elasticsearch']['run_every']['value'] %>
+  <%= node['pip-elastalert']['elasticsearch']['run_every']['unit'] %>: <%= node['pip-elastalert']['elasticsearch']['run_every']['value'] %>
 
 # ElastAlert will buffer results from the most recent
 # period of time, in case some log sources are not in real time
 buffer_time:
-  <%= node['elastalert']['elasticsearch']['buffer_time']['unit'] %>: <%= node['elastalert']['elasticsearch']['buffer_time']['value'] %>
+  <%= node['pip-elastalert']['elasticsearch']['buffer_time']['unit'] %>: <%= node['pip-elastalert']['elasticsearch']['buffer_time']['value'] %>
 
 # The Elasticsearch hostname for metadata writeback
 # Note that every rule can have its own Elasticsearch host
-es_host: <%= node['elastalert']['elasticsearch']['hostname'] %>
+es_host: <%= node['pip-elastalert']['elasticsearch']['hostname'] %>
 
 # The Elasticsearch port
-es_port: <%= node['elastalert']['elasticsearch']['port'] %>
+es_port: <%= node['pip-elastalert']['elasticsearch']['port'] %>
 
 # Optional URL prefix for Elasticsearch
 #es_url_prefix: elasticsearch
@@ -41,9 +41,9 @@ es_port: <%= node['elastalert']['elasticsearch']['port'] %>
 # The index on es_host which is used for metadata storage
 # This can be a unmapped index, but it is recommended that you run
 # elastalert-create-index to set a mapping
-writeback_index: <%= node['elastalert']['elasticsearch']['index'] %>
+writeback_index: <%= node['pip-elastalert']['elasticsearch']['index'] %>
 
 # If an alert fails for some reason, ElastAlert will retry
 # sending the alert until this time period has elapsed
 alert_time_limit:
-  <%= node['elastalert']['elasticsearch']['alert_time_limit']['unit'] %>: <%= node['elastalert']['elasticsearch']['alert_time_limit']['value'] %>
+  <%= node['pip-elastalert']['elasticsearch']['alert_time_limit']['unit'] %>: <%= node['pip-elastalert']['elasticsearch']['alert_time_limit']['value'] %>

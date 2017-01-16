@@ -1,4 +1,4 @@
-name 'elastalert_test'
+name 'pip_elastalert_test'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'all_rights'

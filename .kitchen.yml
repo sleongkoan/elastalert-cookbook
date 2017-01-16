@@ -11,13 +11,13 @@ verifier:
 platforms:
   - name: debian
     run_list:
-      - recipe[elastalert_test::elasticsearch]
+      - recipe[pip_elastalert_test::elasticsearch]
 
 suites:
   - name: default
     run_list:
-      - recipe[elastalert]
-      - recipe[elastalert_test::add_rule]
+      - recipe[pip_elastalert]
+      - recipe[pip_elastalert_test::add_rule]
     verifier:
       inspec_tests:
         - test/recipes
