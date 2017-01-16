@@ -1,5 +1,5 @@
 # Elastalert cookbook
-[![Build Status](https://travis-ci.org/sleongkoan/elastalert-cookbook.svg?branch=master)](https://travis-ci.org/sleongkoan/elastalert-cookbook)
+[![Build Status](https://travis-ci.org/sleongkoan/pip-elastalert-cookbook.svg?branch=master)](https://travis-ci.org/sleongkoan/pip-elastalert-cookbook)
 [![Cookbook Version](https://img.shields.io/cookbook/v/pip-elastalert.svg)](https://community.opscode.com/cookbooks/pip-elastalert)
 [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/sleongkoan/elastalert-cookbook/master/LICENSE)
 
