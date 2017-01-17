@@ -4,8 +4,9 @@
 [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/sleongkoan/elastalert-cookbook/master/LICENSE)
 
 ## Overview
-This chef cookbook is a fork of [zbigniewz](https://github.com/zbigniewz)'s [elastalert-cookbook](https://github.com/zbigniewz/elastalert-cookbook).
-It installs and configures [Yelp's elastalert](https://github.com/Yelp/elastalert).
+This chef cookbook is a fork of [zbigniewz](https://github.com/zbigniewz)'s [elastalert-cookbook](https://github.com/zbigniewz/elastalert-cookbook) with
+[chandru9279](https://github.com/chandru9279)'s [Pull Request](https://github.com/zbigniewz/elastalert-cookbook/pull/1).
+It installs and configures [Yelp's elastalert](https://github.com/Yelp/elastalert) from [PyPI](https://pypi.python.org/pypi/elastalert).
 
 In more details:
 - checks out elastalert github repo using given commit hash or tag
