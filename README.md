@@ -23,7 +23,6 @@ In more details:
 
 ### Cookbooks
 * poise-python
-* managed_directory
 * supervisor
 
 ### Other

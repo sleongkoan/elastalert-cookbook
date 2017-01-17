@@ -67,13 +67,11 @@ python_execute 'setup elastalert index' do
 end
 
 directory elast_rules_dir do
-  user elast_user
-  group elast_group
-  mode '0755'
-end
-
-managed_directory elast_rules_dir do
-  clean_directories true
+    owner elast_user
+    group elast_group
+    mode '0755'
+    recursive true
+    action :create
 end
 
 include_recipe 'supervisor'
